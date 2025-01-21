@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControlCheckIn = new System.Windows.Forms.TabControl();
             this.tabPageCheckIn = new System.Windows.Forms.TabPage();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
@@ -44,24 +44,24 @@
             this.tabPageStatus = new System.Windows.Forms.TabPage();
             this.dataGridViewCheckIn = new System.Windows.Forms.DataGridView();
             this.labelStatus = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
+            this.tabControlCheckIn.SuspendLayout();
             this.tabPageCheckIn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGuests)).BeginInit();
             this.tabPageStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCheckIn)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabControlCheckIn
             // 
-            this.tabControl1.Controls.Add(this.tabPageCheckIn);
-            this.tabControl1.Controls.Add(this.tabPageStatus);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1451, 993);
-            this.tabControl1.TabIndex = 1;
+            this.tabControlCheckIn.Controls.Add(this.tabPageCheckIn);
+            this.tabControlCheckIn.Controls.Add(this.tabPageStatus);
+            this.tabControlCheckIn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlCheckIn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tabControlCheckIn.Location = new System.Drawing.Point(0, 0);
+            this.tabControlCheckIn.Name = "tabControlCheckIn";
+            this.tabControlCheckIn.SelectedIndex = 0;
+            this.tabControlCheckIn.Size = new System.Drawing.Size(1451, 993);
+            this.tabControlCheckIn.TabIndex = 1;
             // 
             // tabPageCheckIn
             // 
@@ -243,10 +243,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControlCheckIn);
             this.Name = "CheckInControl";
             this.Size = new System.Drawing.Size(1451, 993);
-            this.tabControl1.ResumeLayout(false);
+            this.tabControlCheckIn.ResumeLayout(false);
             this.tabPageCheckIn.ResumeLayout(false);
             this.tabPageCheckIn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGuests)).EndInit();
@@ -259,7 +259,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControlCheckIn;
         private System.Windows.Forms.TabPage tabPageCheckIn;
         private System.Windows.Forms.Label labelCheckIn;
         private System.Windows.Forms.TabPage tabPageStatus;

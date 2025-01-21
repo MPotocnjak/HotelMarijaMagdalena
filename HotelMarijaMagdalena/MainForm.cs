@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -24,7 +25,6 @@ namespace HotelMarijaMagdalena
             panelSlide.Top = btn.Top;
             panelSlide.Visible = true;
             panelSlide.Height = btn.Height;
-
         }
 
         private void labelHotelName_Click(object sender, EventArgs e)
@@ -115,6 +115,7 @@ namespace HotelMarijaMagdalena
         private void MainForm_Load(object sender, EventArgs e)
         {
             labelUsername.Text = Username;
+            panelSlide.Visible = false;
         }
 
         /* Clik on "Log out" to close the form. */

@@ -61,6 +61,7 @@
             this.tabControlRooms.SelectedIndex = 0;
             this.tabControlRooms.Size = new System.Drawing.Size(1451, 993);
             this.tabControlRooms.TabIndex = 1;
+            this.tabControlRooms.SelectedIndexChanged += new System.EventHandler(this.tabControlRooms_SelectedIndexChanged);
             // 
             // tabPageRooms
             // 
@@ -76,6 +77,7 @@
             // 
             // dataGridViewRooms
             // 
+            this.dataGridViewRooms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewRooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewRooms.Location = new System.Drawing.Point(90, 148);
             this.dataGridViewRooms.Name = "dataGridViewRooms";
@@ -83,6 +85,7 @@
             this.dataGridViewRooms.RowTemplate.Height = 24;
             this.dataGridViewRooms.Size = new System.Drawing.Size(1115, 294);
             this.dataGridViewRooms.TabIndex = 1;
+            this.dataGridViewRooms.VisibleChanged += new System.EventHandler(this.dataGridViewRooms_VisibleChanged);
             // 
             // label1
             // 
@@ -123,6 +126,7 @@
             this.buttonUpdate.TabIndex = 10;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonSaveOrUpdate_Click);
             // 
             // buttonSave
             // 
@@ -132,6 +136,7 @@
             this.buttonSave.TabIndex = 9;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSaveOrUpdate_Click);
             // 
             // label6
             // 

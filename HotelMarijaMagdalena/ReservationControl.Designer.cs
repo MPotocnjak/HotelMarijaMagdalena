@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControlBooking = new System.Windows.Forms.TabControl();
+            this.tabControlReservation = new System.Windows.Forms.TabControl();
             this.tabPageAddReservation = new System.Windows.Forms.TabPage();
             this.comboBoxRoomNumber = new System.Windows.Forms.ComboBox();
-            this.textBoxGuestID = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.dateTimePickerCheckOut = new System.Windows.Forms.DateTimePicker();
@@ -44,7 +44,7 @@
             this.tabPageReservations = new System.Windows.Forms.TabPage();
             this.dataGridViewAllReservations = new System.Windows.Forms.DataGridView();
             this.labelReservations = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPageCheckAvailability = new System.Windows.Forms.TabPage();
             this.dataGridViewAvailability = new System.Windows.Forms.DataGridView();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.dateTimePickerEnd = new System.Windows.Forms.DateTimePicker();
@@ -52,32 +52,34 @@
             this.labelcheck = new System.Windows.Forms.Label();
             this.labelEnd = new System.Windows.Forms.Label();
             this.labelStart = new System.Windows.Forms.Label();
-            this.tabControlBooking.SuspendLayout();
+            this.tabControlReservation.SuspendLayout();
             this.tabPageAddReservation.SuspendLayout();
             this.tabPageReservations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAllReservations)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.tabPageCheckAvailability.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAvailability)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControlBooking
+            // tabControlReservation
             // 
-            this.tabControlBooking.Controls.Add(this.tabPageAddReservation);
-            this.tabControlBooking.Controls.Add(this.tabPageReservations);
-            this.tabControlBooking.Controls.Add(this.tabPage1);
-            this.tabControlBooking.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlBooking.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tabControlBooking.Location = new System.Drawing.Point(0, 0);
-            this.tabControlBooking.Name = "tabControlBooking";
-            this.tabControlBooking.SelectedIndex = 0;
-            this.tabControlBooking.Size = new System.Drawing.Size(1451, 993);
-            this.tabControlBooking.TabIndex = 2;
+            this.tabControlReservation.Controls.Add(this.tabPageAddReservation);
+            this.tabControlReservation.Controls.Add(this.tabPageReservations);
+            this.tabControlReservation.Controls.Add(this.tabPageCheckAvailability);
+            this.tabControlReservation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlReservation.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tabControlReservation.Location = new System.Drawing.Point(0, 0);
+            this.tabControlReservation.Name = "tabControlReservation";
+            this.tabControlReservation.SelectedIndex = 0;
+            this.tabControlReservation.Size = new System.Drawing.Size(1451, 993);
+            this.tabControlReservation.TabIndex = 2;
+            this.tabControlReservation.SelectedIndexChanged += new System.EventHandler(this.tabControlReservation_SelectedIndexChanged);
+            this.tabControlReservation.VisibleChanged += new System.EventHandler(this.tabControlReservation_VisibleChanged);
             // 
             // tabPageAddReservation
             // 
             this.tabPageAddReservation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.tabPageAddReservation.Controls.Add(this.comboBoxRoomNumber);
-            this.tabPageAddReservation.Controls.Add(this.textBoxGuestID);
+            this.tabPageAddReservation.Controls.Add(this.textBoxName);
             this.tabPageAddReservation.Controls.Add(this.buttonUpdate);
             this.tabPageAddReservation.Controls.Add(this.buttonSave);
             this.tabPageAddReservation.Controls.Add(this.dateTimePickerCheckOut);
@@ -103,13 +105,13 @@
             this.comboBoxRoomNumber.Size = new System.Drawing.Size(425, 36);
             this.comboBoxRoomNumber.TabIndex = 14;
             // 
-            // textBoxGuestID
+            // textBoxName
             // 
-            this.textBoxGuestID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxGuestID.Location = new System.Drawing.Point(90, 244);
-            this.textBoxGuestID.Name = "textBoxGuestID";
-            this.textBoxGuestID.Size = new System.Drawing.Size(425, 34);
-            this.textBoxGuestID.TabIndex = 13;
+            this.textBoxName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxName.Location = new System.Drawing.Point(90, 244);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(425, 34);
+            this.textBoxName.TabIndex = 13;
             // 
             // buttonUpdate
             // 
@@ -120,6 +122,7 @@
             this.buttonUpdate.TabIndex = 12;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonSaveOrUpdate_Click);
             // 
             // buttonSave
             // 
@@ -130,6 +133,7 @@
             this.buttonSave.TabIndex = 11;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSaveOrUpdate_Click);
             // 
             // dateTimePickerCheckOut
             // 
@@ -214,6 +218,7 @@
             // 
             // dataGridViewAllReservations
             // 
+            this.dataGridViewAllReservations.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewAllReservations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAllReservations.Location = new System.Drawing.Point(90, 171);
             this.dataGridViewAllReservations.Name = "dataGridViewAllReservations";
@@ -232,22 +237,22 @@
             this.labelReservations.TabIndex = 1;
             this.labelReservations.Text = "All reservations:";
             // 
-            // tabPage1
+            // tabPageCheckAvailability
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
-            this.tabPage1.Controls.Add(this.dataGridViewAvailability);
-            this.tabPage1.Controls.Add(this.buttonSearch);
-            this.tabPage1.Controls.Add(this.dateTimePickerEnd);
-            this.tabPage1.Controls.Add(this.dateTimePickerStart);
-            this.tabPage1.Controls.Add(this.labelcheck);
-            this.tabPage1.Controls.Add(this.labelEnd);
-            this.tabPage1.Controls.Add(this.labelStart);
-            this.tabPage1.Location = new System.Drawing.Point(4, 37);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1443, 952);
-            this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "Check availability";
+            this.tabPageCheckAvailability.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
+            this.tabPageCheckAvailability.Controls.Add(this.dataGridViewAvailability);
+            this.tabPageCheckAvailability.Controls.Add(this.buttonSearch);
+            this.tabPageCheckAvailability.Controls.Add(this.dateTimePickerEnd);
+            this.tabPageCheckAvailability.Controls.Add(this.dateTimePickerStart);
+            this.tabPageCheckAvailability.Controls.Add(this.labelcheck);
+            this.tabPageCheckAvailability.Controls.Add(this.labelEnd);
+            this.tabPageCheckAvailability.Controls.Add(this.labelStart);
+            this.tabPageCheckAvailability.Location = new System.Drawing.Point(4, 37);
+            this.tabPageCheckAvailability.Name = "tabPageCheckAvailability";
+            this.tabPageCheckAvailability.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCheckAvailability.Size = new System.Drawing.Size(1443, 952);
+            this.tabPageCheckAvailability.TabIndex = 2;
+            this.tabPageCheckAvailability.Text = "Check availability";
             // 
             // dataGridViewAvailability
             // 
@@ -324,17 +329,17 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Controls.Add(this.tabControlBooking);
+            this.Controls.Add(this.tabControlReservation);
             this.Name = "ReservationControl";
             this.Size = new System.Drawing.Size(1451, 993);
-            this.tabControlBooking.ResumeLayout(false);
+            this.tabControlReservation.ResumeLayout(false);
             this.tabPageAddReservation.ResumeLayout(false);
             this.tabPageAddReservation.PerformLayout();
             this.tabPageReservations.ResumeLayout(false);
             this.tabPageReservations.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAllReservations)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.tabPageCheckAvailability.ResumeLayout(false);
+            this.tabPageCheckAvailability.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAvailability)).EndInit();
             this.ResumeLayout(false);
 
@@ -342,7 +347,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControlBooking;
+        private System.Windows.Forms.TabControl tabControlReservation;
         private System.Windows.Forms.TabPage tabPageAddReservation;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonSave;
@@ -356,9 +361,9 @@
         private System.Windows.Forms.TabPage tabPageReservations;
         private System.Windows.Forms.DataGridView dataGridViewAllReservations;
         private System.Windows.Forms.Label labelReservations;
-        private System.Windows.Forms.TextBox textBoxGuestID;
+        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.ComboBox comboBoxRoomNumber;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPageCheckAvailability;
         private System.Windows.Forms.Label labelcheck;
         private System.Windows.Forms.Label labelEnd;
         private System.Windows.Forms.Label labelStart;

@@ -65,6 +65,8 @@
             this.tabControlEmployee.SelectedIndex = 0;
             this.tabControlEmployee.Size = new System.Drawing.Size(1451, 993);
             this.tabControlEmployee.TabIndex = 1;
+            this.tabControlEmployee.SelectedIndexChanged += new System.EventHandler(this.tabControlEmployee_SelectedIndexChanged);
+            this.tabControlEmployee.VisibleChanged += new System.EventHandler(this.tabControlEmployee_VisibleChanged);
             // 
             // tabPageEmployees
             // 
@@ -80,6 +82,7 @@
             // 
             // dataGridViewEmployees
             // 
+            this.dataGridViewEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEmployees.Location = new System.Drawing.Point(90, 148);
             this.dataGridViewEmployees.Name = "dataGridViewEmployees";
@@ -195,6 +198,7 @@
             this.buttonUpdate.TabIndex = 10;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonSaveOrUpdate_Click);
             // 
             // buttonSave
             // 
@@ -204,6 +208,7 @@
             this.buttonSave.TabIndex = 9;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSaveOrUpdate_Click);
             // 
             // comboBoxShift
             // 

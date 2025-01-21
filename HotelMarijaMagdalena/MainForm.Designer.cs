@@ -44,13 +44,13 @@
             this.labelUser = new System.Windows.Forms.Label();
             this.labelHotelName = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBoxHotel = new System.Windows.Forms.PictureBox();
             this.roomControl = new HotelMarijaMagdalena.RoomControl();
             this.serviceControl = new HotelMarijaMagdalena.ServiceControl();
             this.billControl = new HotelMarijaMagdalena.BillControl();
             this.employeeControl = new HotelMarijaMagdalena.EmployeeControl();
             this.reservationControl = new HotelMarijaMagdalena.ReservationControl();
             this.checkInControl = new HotelMarijaMagdalena.CheckInControl();
+            this.pictureBoxHotel = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -260,18 +260,6 @@
             this.panel3.Size = new System.Drawing.Size(1060, 371);
             this.panel3.TabIndex = 2;
             // 
-            // pictureBoxHotel
-            // 
-            this.pictureBoxHotel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBoxHotel.ErrorImage = null;
-            this.pictureBoxHotel.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxHotel.Image")));
-            this.pictureBoxHotel.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxHotel.InitialImage")));
-            this.pictureBoxHotel.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxHotel.Name = "pictureBoxHotel";
-            this.pictureBoxHotel.Size = new System.Drawing.Size(1060, 371);
-            this.pictureBoxHotel.TabIndex = 0;
-            this.pictureBoxHotel.TabStop = false;
-            // 
             // roomControl
             // 
             this.roomControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -332,6 +320,18 @@
             this.checkInControl.TabIndex = 5;
             this.checkInControl.Visible = false;
             // 
+            // pictureBoxHotel
+            // 
+            this.pictureBoxHotel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBoxHotel.ErrorImage = null;
+            this.pictureBoxHotel.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxHotel.Image")));
+            this.pictureBoxHotel.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxHotel.InitialImage")));
+            this.pictureBoxHotel.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxHotel.Name = "pictureBoxHotel";
+            this.pictureBoxHotel.Size = new System.Drawing.Size(1060, 371);
+            this.pictureBoxHotel.TabIndex = 0;
+            this.pictureBoxHotel.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -372,7 +372,6 @@
         private System.Windows.Forms.PictureBox pictureBoxHotel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button ServicesButton;
-        private RoomControl roomsControl;
         private ReservationControl reservationControl;
         private CheckInControl checkInControl;
         private ServiceControl serviceControl;
