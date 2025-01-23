@@ -22,6 +22,29 @@ namespace HotelMarijaMagdalena
 
         string connectionString = ConfigurationManager.ConnectionStrings["BazaHotel"].ConnectionString;
 
+        private void tabControlReservation_VisibleChanged(object sender, EventArgs e)
+        {
+            if (tabControlReservation.Visible)
+            {
+                // Insert room numbers into list
+                comboBoxRoomNumber.Items.Clear();
+                SqlConnection conn = new SqlConnection(connectionString);
+                conn.Open();
+
+                string query = @"SELECT RoomNumber FROM Rooms";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        comboBoxRoomNumber.Items.Add(reader.GetInt32(0));
+                    }
+                }
+
+                conn.Close();
+            }
+        }
+
         private void tabControlReservation_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -59,9 +82,16 @@ namespace HotelMarijaMagdalena
                 return;
             }
 
-            if (dateTimePickerCheckIn.Value < DateTime.Now)
+            if (comboBoxRoomNumber.SelectedIndex < 0)
             {
-                MessageBox.Show("Check-in date can't be in past or today!", "Check-in date error");
+                MessageBox.Show($"Room number {comboBoxRoomNumber.Text} doesn't exist!",
+                        "Reservation room number error");
+                return;
+            }
+
+            if (dateTimePickerCheckIn.Value < DateTime.Now.Date)
+            {
+                MessageBox.Show("Check-in date can't be in past!", "Check-in date error");
                 return;
             }
 
@@ -137,29 +167,6 @@ namespace HotelMarijaMagdalena
             }
 
             conn.Close();
-        }
-
-        private void tabControlReservation_VisibleChanged(object sender, EventArgs e)
-        {
-            if (tabControlReservation.Visible)
-            {
-                // Insert room numbers into list
-                comboBoxRoomNumber.Items.Clear();
-                SqlConnection conn = new SqlConnection(connectionString);
-                conn.Open();
-
-                string query = @"SELECT RoomNumber FROM Rooms";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                using (SqlDataReader reader = cmd.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        comboBoxRoomNumber.Items.Add(reader.GetInt32(0));
-                    }
-                }
-
-                conn.Close();
-            }
         }
 
         private void buttonSearch_Click(object sender, EventArgs e)

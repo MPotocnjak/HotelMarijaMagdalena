@@ -39,7 +39,7 @@
             this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.textBoxDateOfBirth = new System.Windows.Forms.TextBox();
-            this.textBoxAdress = new System.Windows.Forms.TextBox();
+            this.textBoxAddress = new System.Windows.Forms.TextBox();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -146,13 +146,13 @@
             this.textBoxDateOfBirth.Size = new System.Drawing.Size(346, 30);
             this.textBoxDateOfBirth.TabIndex = 14;
             // 
-            // textBoxAdress
+            // textBoxAddress
             // 
-            this.textBoxAdress.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxAdress.Location = new System.Drawing.Point(521, 353);
-            this.textBoxAdress.Name = "textBoxAdress";
-            this.textBoxAdress.Size = new System.Drawing.Size(346, 30);
-            this.textBoxAdress.TabIndex = 15;
+            this.textBoxAddress.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxAddress.Location = new System.Drawing.Point(521, 353);
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(346, 30);
+            this.textBoxAddress.TabIndex = 15;
             // 
             // textBoxPhone
             // 
@@ -180,7 +180,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBoxPhone);
-            this.Controls.Add(this.textBoxAdress);
+            this.Controls.Add(this.textBoxAddress);
             this.Controls.Add(this.textBoxDateOfBirth);
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.textBoxLastName);
@@ -212,7 +212,7 @@
         private System.Windows.Forms.TextBox textBoxLastName;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.TextBox textBoxDateOfBirth;
-        private System.Windows.Forms.TextBox textBoxAdress;
+        private System.Windows.Forms.TextBox textBoxAddress;
         private System.Windows.Forms.TextBox textBoxPhone;
         private System.Windows.Forms.Button buttonSave;
     }

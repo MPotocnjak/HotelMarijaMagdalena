@@ -12,9 +12,11 @@ namespace HotelMarijaMagdalena
 {
     public partial class PreviewForm : Form
     {
-        public PreviewForm()
+        public string roomNumber;
+        public PreviewForm(string roomNumber)
         {
             InitializeComponent();
+            this.roomNumber = roomNumber;
         }
     }
 }

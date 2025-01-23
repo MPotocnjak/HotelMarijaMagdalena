@@ -62,6 +62,8 @@
             this.tabControlCheckIn.SelectedIndex = 0;
             this.tabControlCheckIn.Size = new System.Drawing.Size(1451, 993);
             this.tabControlCheckIn.TabIndex = 1;
+            this.tabControlCheckIn.SelectedIndexChanged += new System.EventHandler(this.tabControlCheckIn_SelectedIndexChanged);
+            this.tabControlCheckIn.VisibleChanged += new System.EventHandler(this.tabControlCheckIn_VisibleChanged);
             // 
             // tabPageCheckIn
             // 
@@ -220,6 +222,7 @@
             // 
             // dataGridViewCheckIn
             // 
+            this.dataGridViewCheckIn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewCheckIn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCheckIn.Location = new System.Drawing.Point(90, 171);
             this.dataGridViewCheckIn.Name = "dataGridViewCheckIn";
@@ -238,13 +241,13 @@
             this.labelStatus.TabIndex = 1;
             this.labelStatus.Text = "Status:";
             // 
-            // CheckInControl
+            // BookingControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Controls.Add(this.tabControlCheckIn);
-            this.Name = "CheckInControl";
+            this.Name = "BookingControl";
             this.Size = new System.Drawing.Size(1451, 993);
             this.tabControlCheckIn.ResumeLayout(false);
             this.tabPageCheckIn.ResumeLayout(false);

@@ -85,6 +85,7 @@
             this.Controls.Add(this.labelRoomNumber);
             this.Name = "BillControl";
             this.Size = new System.Drawing.Size(1443, 952);
+            this.Load += new System.EventHandler(this.BillControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

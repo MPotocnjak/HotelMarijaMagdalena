@@ -30,7 +30,7 @@
         {
             this.labelRoomNumber = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.labelClientAdress = new System.Windows.Forms.Label();
+            this.labelClientAddress = new System.Windows.Forms.Label();
             this.labelClientName = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -84,9 +84,9 @@
             this.labelRoomNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelRoomNumber.Location = new System.Drawing.Point(289, 348);
             this.labelRoomNumber.Name = "labelRoomNumber";
-            this.labelRoomNumber.Size = new System.Drawing.Size(30, 32);
+            this.labelRoomNumber.Size = new System.Drawing.Size(22, 32);
             this.labelRoomNumber.TabIndex = 61;
-            this.labelRoomNumber.Text = "?";
+            this.labelRoomNumber.Text = "/";
             // 
             // label16
             // 
@@ -98,15 +98,15 @@
             this.label16.TabIndex = 60;
             this.label16.Text = "Room number:";
             // 
-            // labelClientAdress
+            // labelClientAddress
             // 
-            this.labelClientAdress.AutoSize = true;
-            this.labelClientAdress.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelClientAdress.Location = new System.Drawing.Point(202, 394);
-            this.labelClientAdress.Name = "labelClientAdress";
-            this.labelClientAdress.Size = new System.Drawing.Size(30, 32);
-            this.labelClientAdress.TabIndex = 59;
-            this.labelClientAdress.Text = "?";
+            this.labelClientAddress.AutoSize = true;
+            this.labelClientAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelClientAddress.Location = new System.Drawing.Point(208, 394);
+            this.labelClientAddress.Name = "labelClientAddress";
+            this.labelClientAddress.Size = new System.Drawing.Size(22, 32);
+            this.labelClientAddress.TabIndex = 59;
+            this.labelClientAddress.Text = "/";
             // 
             // labelClientName
             // 
@@ -114,9 +114,9 @@
             this.labelClientName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelClientName.Location = new System.Drawing.Point(188, 304);
             this.labelClientName.Name = "labelClientName";
-            this.labelClientName.Size = new System.Drawing.Size(30, 32);
+            this.labelClientName.Size = new System.Drawing.Size(22, 32);
             this.labelClientName.TabIndex = 58;
-            this.labelClientName.Text = "?";
+            this.labelClientName.Text = "/";
             // 
             // label5
             // 
@@ -124,9 +124,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label5.Location = new System.Drawing.Point(86, 394);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 32);
+            this.label5.Size = new System.Drawing.Size(126, 32);
             this.label5.TabIndex = 57;
-            this.label5.Text = "Adress:";
+            this.label5.Text = "Address:";
             // 
             // label4
             // 
@@ -144,9 +144,9 @@
             this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelTime.Location = new System.Drawing.Point(290, 259);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(30, 32);
+            this.labelTime.Size = new System.Drawing.Size(70, 32);
             this.labelTime.TabIndex = 55;
-            this.labelTime.Text = "?";
+            this.labelTime.Text = "Now";
             // 
             // label3
             // 
@@ -164,11 +164,11 @@
             this.labelHotelName.BackColor = System.Drawing.Color.Transparent;
             this.labelHotelName.Font = new System.Drawing.Font("Vivaldi", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHotelName.ForeColor = System.Drawing.Color.Black;
-            this.labelHotelName.Location = new System.Drawing.Point(182, 50);
+            this.labelHotelName.Location = new System.Drawing.Point(79, 38);
             this.labelHotelName.Name = "labelHotelName";
-            this.labelHotelName.Size = new System.Drawing.Size(636, 71);
+            this.labelHotelName.Size = new System.Drawing.Size(764, 71);
             this.labelHotelName.TabIndex = 53;
-            this.labelHotelName.Text = "Hotel Marija Magdalena";
+            this.labelHotelName.Text = "Hotel Marija Magdalena ****";
             // 
             // panel1
             // 
@@ -184,9 +184,9 @@
             this.labelNumberOfInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelNumberOfInvoice.Location = new System.Drawing.Point(213, 214);
             this.labelNumberOfInvoice.Name = "labelNumberOfInvoice";
-            this.labelNumberOfInvoice.Size = new System.Drawing.Size(30, 32);
+            this.labelNumberOfInvoice.Size = new System.Drawing.Size(62, 32);
             this.labelNumberOfInvoice.TabIndex = 51;
-            this.labelNumberOfInvoice.Text = "?";
+            this.labelNumberOfInvoice.Text = "404";
             // 
             // label2
             // 
@@ -222,11 +222,11 @@
             // 
             this.TotalPrice.AutoSize = true;
             this.TotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TotalPrice.Location = new System.Drawing.Point(772, 885);
+            this.TotalPrice.Location = new System.Drawing.Point(758, 885);
             this.TotalPrice.Name = "TotalPrice";
-            this.TotalPrice.Size = new System.Drawing.Size(24, 25);
+            this.TotalPrice.Size = new System.Drawing.Size(54, 25);
             this.TotalPrice.TabIndex = 95;
-            this.TotalPrice.Text = "?";
+            this.TotalPrice.Text = "0,00";
             // 
             // label37
             // 
@@ -320,71 +320,71 @@
             // 
             this.AccomodationPrice.AutoSize = true;
             this.AccomodationPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.AccomodationPrice.Location = new System.Drawing.Point(772, 803);
+            this.AccomodationPrice.Location = new System.Drawing.Point(762, 803);
             this.AccomodationPrice.Name = "AccomodationPrice";
-            this.AccomodationPrice.Size = new System.Drawing.Size(23, 25);
+            this.AccomodationPrice.Size = new System.Drawing.Size(50, 25);
             this.AccomodationPrice.TabIndex = 85;
-            this.AccomodationPrice.Text = "?";
+            this.AccomodationPrice.Text = "0,00";
             // 
             // WellnessPrice
             // 
             this.WellnessPrice.AutoSize = true;
             this.WellnessPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.WellnessPrice.Location = new System.Drawing.Point(772, 762);
+            this.WellnessPrice.Location = new System.Drawing.Point(762, 762);
             this.WellnessPrice.Name = "WellnessPrice";
-            this.WellnessPrice.Size = new System.Drawing.Size(23, 25);
+            this.WellnessPrice.Size = new System.Drawing.Size(50, 25);
             this.WellnessPrice.TabIndex = 84;
-            this.WellnessPrice.Text = "?";
+            this.WellnessPrice.Text = "0,00";
             // 
             // RoomServicePrice
             // 
             this.RoomServicePrice.AutoSize = true;
             this.RoomServicePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.RoomServicePrice.Location = new System.Drawing.Point(772, 715);
+            this.RoomServicePrice.Location = new System.Drawing.Point(762, 715);
             this.RoomServicePrice.Name = "RoomServicePrice";
-            this.RoomServicePrice.Size = new System.Drawing.Size(23, 25);
+            this.RoomServicePrice.Size = new System.Drawing.Size(50, 25);
             this.RoomServicePrice.TabIndex = 83;
-            this.RoomServicePrice.Text = "?";
+            this.RoomServicePrice.Text = "0,00";
             // 
             // CoctailPrice
             // 
             this.CoctailPrice.AutoSize = true;
             this.CoctailPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.CoctailPrice.Location = new System.Drawing.Point(772, 672);
+            this.CoctailPrice.Location = new System.Drawing.Point(762, 672);
             this.CoctailPrice.Name = "CoctailPrice";
-            this.CoctailPrice.Size = new System.Drawing.Size(23, 25);
+            this.CoctailPrice.Size = new System.Drawing.Size(50, 25);
             this.CoctailPrice.TabIndex = 82;
-            this.CoctailPrice.Text = "?";
+            this.CoctailPrice.Text = "0,00";
             // 
             // DinnerPrice
             // 
             this.DinnerPrice.AutoSize = true;
             this.DinnerPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.DinnerPrice.Location = new System.Drawing.Point(772, 630);
+            this.DinnerPrice.Location = new System.Drawing.Point(762, 630);
             this.DinnerPrice.Name = "DinnerPrice";
-            this.DinnerPrice.Size = new System.Drawing.Size(23, 25);
+            this.DinnerPrice.Size = new System.Drawing.Size(50, 25);
             this.DinnerPrice.TabIndex = 81;
-            this.DinnerPrice.Text = "?";
+            this.DinnerPrice.Text = "0,00";
             // 
             // LunchPrice
             // 
             this.LunchPrice.AutoSize = true;
             this.LunchPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LunchPrice.Location = new System.Drawing.Point(772, 588);
+            this.LunchPrice.Location = new System.Drawing.Point(762, 588);
             this.LunchPrice.Name = "LunchPrice";
-            this.LunchPrice.Size = new System.Drawing.Size(23, 25);
+            this.LunchPrice.Size = new System.Drawing.Size(50, 25);
             this.LunchPrice.TabIndex = 80;
-            this.LunchPrice.Text = "?";
+            this.LunchPrice.Text = "0,00";
             // 
             // BreakfastPrice
             // 
             this.BreakfastPrice.AutoSize = true;
             this.BreakfastPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.BreakfastPrice.Location = new System.Drawing.Point(772, 543);
+            this.BreakfastPrice.Location = new System.Drawing.Point(762, 543);
             this.BreakfastPrice.Name = "BreakfastPrice";
-            this.BreakfastPrice.Size = new System.Drawing.Size(23, 25);
+            this.BreakfastPrice.Size = new System.Drawing.Size(50, 25);
             this.BreakfastPrice.TabIndex = 79;
-            this.BreakfastPrice.Text = "?";
+            this.BreakfastPrice.Text = "0,00";
             // 
             // AccomodationQuantity
             // 
@@ -392,9 +392,9 @@
             this.AccomodationQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.AccomodationQuantity.Location = new System.Drawing.Point(468, 803);
             this.AccomodationQuantity.Name = "AccomodationQuantity";
-            this.AccomodationQuantity.Size = new System.Drawing.Size(23, 25);
+            this.AccomodationQuantity.Size = new System.Drawing.Size(18, 25);
             this.AccomodationQuantity.TabIndex = 78;
-            this.AccomodationQuantity.Text = "?";
+            this.AccomodationQuantity.Text = "/";
             // 
             // WellnessQuantity
             // 
@@ -402,9 +402,9 @@
             this.WellnessQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.WellnessQuantity.Location = new System.Drawing.Point(468, 762);
             this.WellnessQuantity.Name = "WellnessQuantity";
-            this.WellnessQuantity.Size = new System.Drawing.Size(23, 25);
+            this.WellnessQuantity.Size = new System.Drawing.Size(18, 25);
             this.WellnessQuantity.TabIndex = 77;
-            this.WellnessQuantity.Text = "?";
+            this.WellnessQuantity.Text = "/";
             // 
             // RoomServiceQuantity
             // 
@@ -412,9 +412,9 @@
             this.RoomServiceQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.RoomServiceQuantity.Location = new System.Drawing.Point(468, 715);
             this.RoomServiceQuantity.Name = "RoomServiceQuantity";
-            this.RoomServiceQuantity.Size = new System.Drawing.Size(23, 25);
+            this.RoomServiceQuantity.Size = new System.Drawing.Size(18, 25);
             this.RoomServiceQuantity.TabIndex = 76;
-            this.RoomServiceQuantity.Text = "?";
+            this.RoomServiceQuantity.Text = "/";
             // 
             // CoctailQuantity
             // 
@@ -422,9 +422,9 @@
             this.CoctailQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.CoctailQuantity.Location = new System.Drawing.Point(468, 672);
             this.CoctailQuantity.Name = "CoctailQuantity";
-            this.CoctailQuantity.Size = new System.Drawing.Size(23, 25);
+            this.CoctailQuantity.Size = new System.Drawing.Size(18, 25);
             this.CoctailQuantity.TabIndex = 75;
-            this.CoctailQuantity.Text = "?";
+            this.CoctailQuantity.Text = "/";
             // 
             // DinnerQuantity
             // 
@@ -432,9 +432,9 @@
             this.DinnerQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.DinnerQuantity.Location = new System.Drawing.Point(468, 630);
             this.DinnerQuantity.Name = "DinnerQuantity";
-            this.DinnerQuantity.Size = new System.Drawing.Size(23, 25);
+            this.DinnerQuantity.Size = new System.Drawing.Size(18, 25);
             this.DinnerQuantity.TabIndex = 74;
-            this.DinnerQuantity.Text = "?";
+            this.DinnerQuantity.Text = "/";
             // 
             // LunchQuantity
             // 
@@ -442,9 +442,9 @@
             this.LunchQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.LunchQuantity.Location = new System.Drawing.Point(468, 588);
             this.LunchQuantity.Name = "LunchQuantity";
-            this.LunchQuantity.Size = new System.Drawing.Size(23, 25);
+            this.LunchQuantity.Size = new System.Drawing.Size(18, 25);
             this.LunchQuantity.TabIndex = 73;
-            this.LunchQuantity.Text = "?";
+            this.LunchQuantity.Text = "/";
             // 
             // BreakfastQuantity
             // 
@@ -452,9 +452,9 @@
             this.BreakfastQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.BreakfastQuantity.Location = new System.Drawing.Point(468, 543);
             this.BreakfastQuantity.Name = "BreakfastQuantity";
-            this.BreakfastQuantity.Size = new System.Drawing.Size(23, 25);
+            this.BreakfastQuantity.Size = new System.Drawing.Size(18, 25);
             this.BreakfastQuantity.TabIndex = 72;
-            this.BreakfastQuantity.Text = "?";
+            this.BreakfastQuantity.Text = "/";
             // 
             // label15
             // 
@@ -598,7 +598,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.labelRoomNumber);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.labelClientAdress);
+            this.Controls.Add(this.labelClientAddress);
             this.Controls.Add(this.labelClientName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -611,6 +611,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PreviewControl";
             this.Size = new System.Drawing.Size(988, 1008);
+            this.Load += new System.EventHandler(this.PreviewControl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -620,7 +621,7 @@
 
         private System.Windows.Forms.Label labelRoomNumber;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label labelClientAdress;
+        private System.Windows.Forms.Label labelClientAddress;
         private System.Windows.Forms.Label labelClientName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
