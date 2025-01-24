@@ -51,31 +51,36 @@
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
             this.AccomodationPrice = new System.Windows.Forms.Label();
             this.WellnessPrice = new System.Windows.Forms.Label();
             this.RoomServicePrice = new System.Windows.Forms.Label();
             this.CoctailPrice = new System.Windows.Forms.Label();
             this.DinnerPrice = new System.Windows.Forms.Label();
             this.LunchPrice = new System.Windows.Forms.Label();
-            this.BreakfastPrice = new System.Windows.Forms.Label();
             this.AccomodationQuantity = new System.Windows.Forms.Label();
             this.WellnessQuantity = new System.Windows.Forms.Label();
             this.RoomServiceQuantity = new System.Windows.Forms.Label();
             this.CoctailQuantity = new System.Windows.Forms.Label();
             this.DinnerQuantity = new System.Windows.Forms.Label();
             this.LunchQuantity = new System.Windows.Forms.Label();
-            this.BreakfastQuantity = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.richTextBoxTypes = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxPrices = new System.Windows.Forms.RichTextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.BreakfastPrice = new System.Windows.Forms.Label();
+            this.BreakfastQuantity = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.buttonPay = new System.Windows.Forms.Button();
+            this.comboBoxPayment = new System.Windows.Forms.ComboBox();
+            this.labelPayment = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelRoomNumber
@@ -222,8 +227,9 @@
             // 
             this.TotalPrice.AutoSize = true;
             this.TotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.TotalPrice.Location = new System.Drawing.Point(758, 885);
+            this.TotalPrice.Location = new System.Drawing.Point(727, 885);
             this.TotalPrice.Name = "TotalPrice";
+            this.TotalPrice.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TotalPrice.Size = new System.Drawing.Size(54, 25);
             this.TotalPrice.TabIndex = 95;
             this.TotalPrice.Text = "0,00";
@@ -306,16 +312,6 @@
             this.label35.TabIndex = 87;
             this.label35.Text = "€";
             // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label36.Location = new System.Drawing.Point(824, 543);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(23, 25);
-            this.label36.TabIndex = 86;
-            this.label36.Text = "€";
-            // 
             // AccomodationPrice
             // 
             this.AccomodationPrice.AutoSize = true;
@@ -375,16 +371,6 @@
             this.LunchPrice.Size = new System.Drawing.Size(50, 25);
             this.LunchPrice.TabIndex = 80;
             this.LunchPrice.Text = "0,00";
-            // 
-            // BreakfastPrice
-            // 
-            this.BreakfastPrice.AutoSize = true;
-            this.BreakfastPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.BreakfastPrice.Location = new System.Drawing.Point(762, 543);
-            this.BreakfastPrice.Name = "BreakfastPrice";
-            this.BreakfastPrice.Size = new System.Drawing.Size(50, 25);
-            this.BreakfastPrice.TabIndex = 79;
-            this.BreakfastPrice.Text = "0,00";
             // 
             // AccomodationQuantity
             // 
@@ -446,16 +432,6 @@
             this.LunchQuantity.TabIndex = 73;
             this.LunchQuantity.Text = "/";
             // 
-            // BreakfastQuantity
-            // 
-            this.BreakfastQuantity.AutoSize = true;
-            this.BreakfastQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.BreakfastQuantity.Location = new System.Drawing.Point(468, 543);
-            this.BreakfastQuantity.Name = "BreakfastQuantity";
-            this.BreakfastQuantity.Size = new System.Drawing.Size(18, 25);
-            this.BreakfastQuantity.TabIndex = 72;
-            this.BreakfastQuantity.Text = "/";
-            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -516,16 +492,6 @@
             this.label10.TabIndex = 66;
             this.label10.Text = "Lunch";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.Location = new System.Drawing.Point(87, 543);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 25);
-            this.label9.TabIndex = 65;
-            this.label9.Text = "Breakfast";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -556,11 +522,116 @@
             this.label6.TabIndex = 62;
             this.label6.Text = "Description:";
             // 
+            // richTextBoxTypes
+            // 
+            this.richTextBoxTypes.BackColor = System.Drawing.SystemColors.Control;
+            this.richTextBoxTypes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBoxTypes.Enabled = false;
+            this.richTextBoxTypes.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.richTextBoxTypes.ForeColor = System.Drawing.Color.Black;
+            this.richTextBoxTypes.Location = new System.Drawing.Point(91, 543);
+            this.richTextBoxTypes.Name = "richTextBoxTypes";
+            this.richTextBoxTypes.Size = new System.Drawing.Size(600, 285);
+            this.richTextBoxTypes.TabIndex = 97;
+            this.richTextBoxTypes.Text = "";
+            // 
+            // richTextBoxPrices
+            // 
+            this.richTextBoxPrices.BackColor = System.Drawing.SystemColors.Control;
+            this.richTextBoxPrices.Enabled = false;
+            this.richTextBoxPrices.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.richTextBoxPrices.ForeColor = System.Drawing.Color.Black;
+            this.richTextBoxPrices.Location = new System.Drawing.Point(697, 543);
+            this.richTextBoxPrices.Name = "richTextBoxPrices";
+            this.richTextBoxPrices.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.richTextBoxPrices.Size = new System.Drawing.Size(146, 285);
+            this.richTextBoxPrices.TabIndex = 98;
+            this.richTextBoxPrices.Text = "";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label36.Location = new System.Drawing.Point(824, 543);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(23, 25);
+            this.label36.TabIndex = 86;
+            this.label36.Text = "€";
+            // 
+            // BreakfastPrice
+            // 
+            this.BreakfastPrice.AutoSize = true;
+            this.BreakfastPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BreakfastPrice.Location = new System.Drawing.Point(762, 543);
+            this.BreakfastPrice.Name = "BreakfastPrice";
+            this.BreakfastPrice.Size = new System.Drawing.Size(50, 25);
+            this.BreakfastPrice.TabIndex = 79;
+            this.BreakfastPrice.Text = "0,00";
+            // 
+            // BreakfastQuantity
+            // 
+            this.BreakfastQuantity.AutoSize = true;
+            this.BreakfastQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.BreakfastQuantity.Location = new System.Drawing.Point(468, 543);
+            this.BreakfastQuantity.Name = "BreakfastQuantity";
+            this.BreakfastQuantity.Size = new System.Drawing.Size(18, 25);
+            this.BreakfastQuantity.TabIndex = 72;
+            this.BreakfastQuantity.Text = "/";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.Location = new System.Drawing.Point(87, 543);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(94, 25);
+            this.label9.TabIndex = 65;
+            this.label9.Text = "Breakfast";
+            // 
+            // buttonPay
+            // 
+            this.buttonPay.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonPay.Location = new System.Drawing.Point(731, 948);
+            this.buttonPay.Name = "buttonPay";
+            this.buttonPay.Size = new System.Drawing.Size(116, 44);
+            this.buttonPay.TabIndex = 99;
+            this.buttonPay.Text = "Pay";
+            this.buttonPay.UseVisualStyleBackColor = true;
+            this.buttonPay.Click += new System.EventHandler(this.buttonPay_Click);
+            // 
+            // comboBoxPayment
+            // 
+            this.comboBoxPayment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.comboBoxPayment.FormattingEnabled = true;
+            this.comboBoxPayment.Items.AddRange(new object[] {
+            "Cash",
+            "Debit Card",
+            "Bank Transfer"});
+            this.comboBoxPayment.Location = new System.Drawing.Point(277, 953);
+            this.comboBoxPayment.Name = "comboBoxPayment";
+            this.comboBoxPayment.Size = new System.Drawing.Size(425, 36);
+            this.comboBoxPayment.TabIndex = 100;
+            // 
+            // labelPayment
+            // 
+            this.labelPayment.AutoSize = true;
+            this.labelPayment.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelPayment.Location = new System.Drawing.Point(88, 956);
+            this.labelPayment.Name = "labelPayment";
+            this.labelPayment.Size = new System.Drawing.Size(174, 28);
+            this.labelPayment.TabIndex = 101;
+            this.labelPayment.Text = "Payment method:";
+            // 
             // PreviewControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.Controls.Add(this.labelPayment);
+            this.Controls.Add(this.comboBoxPayment);
+            this.Controls.Add(this.buttonPay);
+            this.Controls.Add(this.richTextBoxPrices);
+            this.Controls.Add(this.richTextBoxTypes);
             this.Controls.Add(this.label38);
             this.Controls.Add(this.TotalPrice);
             this.Controls.Add(this.label37);
@@ -642,30 +713,35 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label AccomodationPrice;
         private System.Windows.Forms.Label WellnessPrice;
         private System.Windows.Forms.Label RoomServicePrice;
         private System.Windows.Forms.Label CoctailPrice;
         private System.Windows.Forms.Label DinnerPrice;
         private System.Windows.Forms.Label LunchPrice;
-        private System.Windows.Forms.Label BreakfastPrice;
         private System.Windows.Forms.Label AccomodationQuantity;
         private System.Windows.Forms.Label WellnessQuantity;
         private System.Windows.Forms.Label RoomServiceQuantity;
         private System.Windows.Forms.Label CoctailQuantity;
         private System.Windows.Forms.Label DinnerQuantity;
         private System.Windows.Forms.Label LunchQuantity;
-        private System.Windows.Forms.Label BreakfastQuantity;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.RichTextBox richTextBoxTypes;
+        private System.Windows.Forms.RichTextBox richTextBoxPrices;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label BreakfastPrice;
+        private System.Windows.Forms.Label BreakfastQuantity;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button buttonPay;
+        private System.Windows.Forms.ComboBox comboBoxPayment;
+        private System.Windows.Forms.Label labelPayment;
     }
 }

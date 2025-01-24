@@ -50,8 +50,11 @@ namespace HotelMarijaMagdalena
                 SqlConnection conn = new SqlConnection(connectionString);
                 conn.Open();
 
-                string query = @"SELECT RoomNumber FROM Rooms";
+                string query = @"SELECT RoomNumber FROM Rooms" +
+                               " WHERE Status = 'Available'";
+
                 SqlCommand cmd = new SqlCommand(query, conn);
+
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
@@ -59,6 +62,13 @@ namespace HotelMarijaMagdalena
                         comboBoxRoomNumber.Items.Add(reader.GetInt32(0));
                     }
                 }
+
+                query = @"SELECT * FROM Booking";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridViewCheckIn.DataSource = dt;
 
                 conn.Close();
             }
@@ -107,6 +117,8 @@ namespace HotelMarijaMagdalena
             sqlCommand.Parameters.AddWithValue("@roomNumber", roomNumber);
             decimal price = (decimal)sqlCommand.ExecuteScalar();
 
+            TimeSpan days = dateTimePickerCheckOut.Value.Date - dateTimePickerCheckIn.Value.Date;
+
             string queryInsert = "INSERT INTO Booking(BookingId, RoomNumber," +
                                 " CheckInDate, CheckOutDate, TotalPrice)" +
                                 " VALUES (@bookingId, @roomNumber," +
@@ -117,7 +129,7 @@ namespace HotelMarijaMagdalena
             cmd.Parameters.AddWithValue("@roomNumber", comboBoxRoomNumber.Text);
             cmd.Parameters.AddWithValue("@checkInDate", dateTimePickerCheckIn.Value);
             cmd.Parameters.AddWithValue("@checkOutDate", dateTimePickerCheckOut.Value);
-            cmd.Parameters.AddWithValue("@totalPrice", price);
+            cmd.Parameters.AddWithValue("@totalPrice", price * days.Days);
 
             try
             {
@@ -159,6 +171,35 @@ namespace HotelMarijaMagdalena
                     MessageBox.Show(ex.Message, "ERROR");
                     return;
                 }
+            }
+
+            // Change status for this room
+            string queryRoom = @"UPDATE Rooms SET Status = 'Occupied'" +
+                               " WHERE RoomNumber = @roomNumber";
+            cmd = new SqlCommand(queryRoom, conn);
+            cmd.Parameters.AddWithValue("@roomNumber", roomNumber);
+            cmd.ExecuteNonQuery();
+
+            int n = 0;  // Number of rows affected
+            try
+            {
+                n = cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR");
+                return;
+            }
+
+            // Update didn't affect database
+            if (n == 0)
+            {
+                MessageBox.Show("Update of Rooms table (status) failed!", "Update error");
+                return;
+            }
+            else
+            {
+                MessageBox.Show($"Room number {roomNumber} is now occupied.", "Success");
             }
 
             conn.Close();

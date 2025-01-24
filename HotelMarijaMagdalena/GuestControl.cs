@@ -49,7 +49,7 @@ namespace HotelMarijaMagdalena
                 return;
             }
 
-            var date = DateTime.Now;
+            var date = DateTime.Now.Date;
             if (!DateTime.TryParse(textBoxDateOfBirth.Text, out date))
             {
                 MessageBox.Show("Please enter date in format DD/MM/YYYY",

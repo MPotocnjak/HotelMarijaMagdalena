@@ -172,6 +172,8 @@ namespace HotelMarijaMagdalena
         private void buttonSearch_Click(object sender, EventArgs e)
         {
             dataGridViewAvailability.Visible = true;
+
+            
         }
     }
 }

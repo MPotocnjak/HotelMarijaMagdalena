@@ -28,8 +28,11 @@ namespace HotelMarijaMagdalena
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
 
-            string query = @"SELECT RoomNumber FROM Rooms";
+            string query = @"SELECT RoomNumber FROM Rooms" +
+                           " WHERE Status = 'Occupied'";
+
             SqlCommand cmd = new SqlCommand(query, conn);
+
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
                 while (reader.Read())
