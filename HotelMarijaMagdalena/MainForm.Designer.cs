@@ -197,41 +197,6 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // labelLogOut
-            // 
-            this.labelLogOut.AutoSize = true;
-            this.labelLogOut.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labelLogOut.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelLogOut.ForeColor = System.Drawing.Color.Transparent;
-            this.labelLogOut.Location = new System.Drawing.Point(973, 0);
-            this.labelLogOut.Name = "labelLogOut";
-            this.labelLogOut.Size = new System.Drawing.Size(87, 31);
-            this.labelLogOut.TabIndex = 3;
-            this.labelLogOut.Text = "Log out";
-            this.labelLogOut.Click += new System.EventHandler(this.labelLogOut_Click);
-            // 
-            // labelUsername
-            // 
-            this.labelUsername.AutoSize = true;
-            this.labelUsername.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelUsername.ForeColor = System.Drawing.Color.Transparent;
-            this.labelUsername.Location = new System.Drawing.Point(72, 0);
-            this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(24, 31);
-            this.labelUsername.TabIndex = 2;
-            this.labelUsername.Text = "?";
-            // 
-            // labelUser
-            // 
-            this.labelUser.AutoSize = true;
-            this.labelUser.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelUser.ForeColor = System.Drawing.Color.Transparent;
-            this.labelUser.Location = new System.Drawing.Point(3, 0);
-            this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(63, 31);
-            this.labelUser.TabIndex = 1;
-            this.labelUser.Text = "User:";
-            // 
             // labelHotelName
             // 
             this.labelHotelName.AutoSize = true;
@@ -341,7 +306,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "Hotel System";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);

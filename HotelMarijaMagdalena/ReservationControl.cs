@@ -169,11 +169,5 @@ namespace HotelMarijaMagdalena
             conn.Close();
         }
 
-        private void buttonSearch_Click(object sender, EventArgs e)
-        {
-            dataGridViewAvailability.Visible = true;
-
-            
-        }
     }
 }

@@ -38,7 +38,7 @@
             // 
             this.comboBoxRoomNumber.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboBoxRoomNumber.FormattingEnabled = true;
-            this.comboBoxRoomNumber.Location = new System.Drawing.Point(177, 296);
+            this.comboBoxRoomNumber.Location = new System.Drawing.Point(90, 226);
             this.comboBoxRoomNumber.Name = "comboBoxRoomNumber";
             this.comboBoxRoomNumber.Size = new System.Drawing.Size(425, 36);
             this.comboBoxRoomNumber.TabIndex = 18;
@@ -46,7 +46,7 @@
             // buttonPreview
             // 
             this.buttonPreview.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonPreview.Location = new System.Drawing.Point(177, 386);
+            this.buttonPreview.Location = new System.Drawing.Point(90, 316);
             this.buttonPreview.Name = "buttonPreview";
             this.buttonPreview.Size = new System.Drawing.Size(116, 44);
             this.buttonPreview.TabIndex = 16;
@@ -58,7 +58,7 @@
             // 
             this.labelRoomNumber.AutoSize = true;
             this.labelRoomNumber.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelRoomNumber.Location = new System.Drawing.Point(172, 239);
+            this.labelRoomNumber.Location = new System.Drawing.Point(85, 169);
             this.labelRoomNumber.Name = "labelRoomNumber";
             this.labelRoomNumber.Size = new System.Drawing.Size(149, 28);
             this.labelRoomNumber.TabIndex = 15;
@@ -67,10 +67,10 @@
             // labelPrintInvoice
             // 
             this.labelPrintInvoice.AutoSize = true;
-            this.labelPrintInvoice.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelPrintInvoice.Location = new System.Drawing.Point(170, 142);
+            this.labelPrintInvoice.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelPrintInvoice.Location = new System.Drawing.Point(83, 77);
             this.labelPrintInvoice.Name = "labelPrintInvoice";
-            this.labelPrintInvoice.Size = new System.Drawing.Size(267, 37);
+            this.labelPrintInvoice.Size = new System.Drawing.Size(308, 41);
             this.labelPrintInvoice.TabIndex = 19;
             this.labelPrintInvoice.Text = "Print the invoice for:";
             // 

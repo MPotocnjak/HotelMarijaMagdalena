@@ -13,7 +13,6 @@ namespace HotelMarijaMagdalena
 {
     public partial class MainForm : Form
     {
-        public String Username;
 
         public MainForm()
         {
@@ -26,6 +25,7 @@ namespace HotelMarijaMagdalena
             panelSlide.Visible = true;
             panelSlide.Height = btn.Height;
         }
+
 
         private void labelHotelName_Click(object sender, EventArgs e)
         {
@@ -111,17 +111,10 @@ namespace HotelMarijaMagdalena
             serviceControl.Show();
         }
 
-        /* Showing username after loading form. */
         private void MainForm_Load(object sender, EventArgs e)
         {
-            labelUsername.Text = Username;
             panelSlide.Visible = false;
         }
 
-        /* Clik on "Log out" to close the form. */
-        private void labelLogOut_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

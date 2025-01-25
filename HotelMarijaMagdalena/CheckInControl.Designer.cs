@@ -30,7 +30,6 @@
         {
             this.tabControlCheckIn = new System.Windows.Forms.TabControl();
             this.tabPageCheckIn = new System.Windows.Forms.TabPage();
-            this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.numericUpDownGuests = new System.Windows.Forms.NumericUpDown();
             this.comboBoxRoomNumber = new System.Windows.Forms.ComboBox();
@@ -44,17 +43,23 @@
             this.tabPageStatus = new System.Windows.Forms.TabPage();
             this.dataGridViewCheckIn = new System.Windows.Forms.DataGridView();
             this.labelStatus = new System.Windows.Forms.Label();
+            this.Guests = new System.Windows.Forms.TabPage();
+            this.labelGuests = new System.Windows.Forms.Label();
+            this.dataGridViewGuests = new System.Windows.Forms.DataGridView();
             this.tabControlCheckIn.SuspendLayout();
             this.tabPageCheckIn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownGuests)).BeginInit();
             this.tabPageStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCheckIn)).BeginInit();
+            this.Guests.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGuests)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlCheckIn
             // 
             this.tabControlCheckIn.Controls.Add(this.tabPageCheckIn);
             this.tabControlCheckIn.Controls.Add(this.tabPageStatus);
+            this.tabControlCheckIn.Controls.Add(this.Guests);
             this.tabControlCheckIn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlCheckIn.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tabControlCheckIn.Location = new System.Drawing.Point(0, 0);
@@ -68,7 +73,6 @@
             // tabPageCheckIn
             // 
             this.tabPageCheckIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
-            this.tabPageCheckIn.Controls.Add(this.buttonUpdate);
             this.tabPageCheckIn.Controls.Add(this.buttonSave);
             this.tabPageCheckIn.Controls.Add(this.numericUpDownGuests);
             this.tabPageCheckIn.Controls.Add(this.comboBoxRoomNumber);
@@ -85,16 +89,6 @@
             this.tabPageCheckIn.Size = new System.Drawing.Size(1443, 952);
             this.tabPageCheckIn.TabIndex = 0;
             this.tabPageCheckIn.Text = "Check-in";
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonUpdate.Location = new System.Drawing.Point(235, 502);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(116, 44);
-            this.buttonUpdate.TabIndex = 12;
-            this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
             // 
             // buttonSave
             // 
@@ -241,13 +235,45 @@
             this.labelStatus.TabIndex = 1;
             this.labelStatus.Text = "Status:";
             // 
-            // BookingControl
+            // Guests
+            // 
+            this.Guests.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
+            this.Guests.Controls.Add(this.dataGridViewGuests);
+            this.Guests.Controls.Add(this.labelGuests);
+            this.Guests.Location = new System.Drawing.Point(4, 37);
+            this.Guests.Name = "Guests";
+            this.Guests.Padding = new System.Windows.Forms.Padding(3);
+            this.Guests.Size = new System.Drawing.Size(1443, 952);
+            this.Guests.TabIndex = 2;
+            this.Guests.Text = "Guests";
+            // 
+            // labelGuests
+            // 
+            this.labelGuests.AutoSize = true;
+            this.labelGuests.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelGuests.Location = new System.Drawing.Point(83, 77);
+            this.labelGuests.Name = "labelGuests";
+            this.labelGuests.Size = new System.Drawing.Size(119, 41);
+            this.labelGuests.TabIndex = 2;
+            this.labelGuests.Text = "Guests:";
+            // 
+            // dataGridViewGuests
+            // 
+            this.dataGridViewGuests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewGuests.Location = new System.Drawing.Point(90, 171);
+            this.dataGridViewGuests.Name = "dataGridViewGuests";
+            this.dataGridViewGuests.RowHeadersWidth = 51;
+            this.dataGridViewGuests.RowTemplate.Height = 24;
+            this.dataGridViewGuests.Size = new System.Drawing.Size(1115, 294);
+            this.dataGridViewGuests.TabIndex = 3;
+            // 
+            // CheckInControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Controls.Add(this.tabControlCheckIn);
-            this.Name = "BookingControl";
+            this.Name = "CheckInControl";
             this.Size = new System.Drawing.Size(1451, 993);
             this.tabControlCheckIn.ResumeLayout(false);
             this.tabPageCheckIn.ResumeLayout(false);
@@ -256,6 +282,9 @@
             this.tabPageStatus.ResumeLayout(false);
             this.tabPageStatus.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCheckIn)).EndInit();
+            this.Guests.ResumeLayout(false);
+            this.Guests.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGuests)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -275,8 +304,10 @@
         private System.Windows.Forms.ComboBox comboBoxRoomNumber;
         private System.Windows.Forms.DateTimePicker dateTimePickerCheckOut;
         private System.Windows.Forms.DateTimePicker dateTimePickerCheckIn;
-        private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.DataGridView dataGridViewCheckIn;
+        private System.Windows.Forms.TabPage Guests;
+        private System.Windows.Forms.Label labelGuests;
+        private System.Windows.Forms.DataGridView dataGridViewGuests;
     }
 }

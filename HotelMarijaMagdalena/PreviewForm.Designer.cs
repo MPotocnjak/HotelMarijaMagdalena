@@ -44,7 +44,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1007, 1002);
+            this.ClientSize = new System.Drawing.Size(1007, 1008);
             this.Controls.Add(this.previewControl);
             this.Name = "PreviewForm";
             this.Text = "Bill";
