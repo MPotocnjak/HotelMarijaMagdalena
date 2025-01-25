@@ -44,27 +44,22 @@
             this.tabPageReservations = new System.Windows.Forms.TabPage();
             this.dataGridViewAllReservations = new System.Windows.Forms.DataGridView();
             this.labelReservations = new System.Windows.Forms.Label();
-            this.tabPageCheckAvailability = new System.Windows.Forms.TabPage();
-            this.dataGridViewAvailability = new System.Windows.Forms.DataGridView();
-            this.buttonSearch = new System.Windows.Forms.Button();
-            this.dateTimePickerEnd = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePickerStart = new System.Windows.Forms.DateTimePicker();
+            this.tabPageGuests = new System.Windows.Forms.TabPage();
             this.labelcheck = new System.Windows.Forms.Label();
-            this.labelEnd = new System.Windows.Forms.Label();
-            this.labelStart = new System.Windows.Forms.Label();
+            this.dataGridViewGuests = new System.Windows.Forms.DataGridView();
             this.tabControlReservation.SuspendLayout();
             this.tabPageAddReservation.SuspendLayout();
             this.tabPageReservations.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAllReservations)).BeginInit();
-            this.tabPageCheckAvailability.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAvailability)).BeginInit();
+            this.tabPageGuests.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGuests)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlReservation
             // 
             this.tabControlReservation.Controls.Add(this.tabPageAddReservation);
             this.tabControlReservation.Controls.Add(this.tabPageReservations);
-            this.tabControlReservation.Controls.Add(this.tabPageCheckAvailability);
+            this.tabControlReservation.Controls.Add(this.tabPageGuests);
             this.tabControlReservation.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlReservation.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.tabControlReservation.Location = new System.Drawing.Point(0, 0);
@@ -237,92 +232,37 @@
             this.labelReservations.TabIndex = 1;
             this.labelReservations.Text = "All reservations:";
             // 
-            // tabPageCheckAvailability
+            // tabPageGuests
             // 
-            this.tabPageCheckAvailability.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
-            this.tabPageCheckAvailability.Controls.Add(this.dataGridViewAvailability);
-            this.tabPageCheckAvailability.Controls.Add(this.buttonSearch);
-            this.tabPageCheckAvailability.Controls.Add(this.dateTimePickerEnd);
-            this.tabPageCheckAvailability.Controls.Add(this.dateTimePickerStart);
-            this.tabPageCheckAvailability.Controls.Add(this.labelcheck);
-            this.tabPageCheckAvailability.Controls.Add(this.labelEnd);
-            this.tabPageCheckAvailability.Controls.Add(this.labelStart);
-            this.tabPageCheckAvailability.Location = new System.Drawing.Point(4, 37);
-            this.tabPageCheckAvailability.Name = "tabPageCheckAvailability";
-            this.tabPageCheckAvailability.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCheckAvailability.Size = new System.Drawing.Size(1443, 952);
-            this.tabPageCheckAvailability.TabIndex = 2;
-            this.tabPageCheckAvailability.Text = "Check availability";
-            // 
-            // dataGridViewAvailability
-            // 
-            this.dataGridViewAvailability.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAvailability.Location = new System.Drawing.Point(141, 462);
-            this.dataGridViewAvailability.Name = "dataGridViewAvailability";
-            this.dataGridViewAvailability.RowHeadersWidth = 51;
-            this.dataGridViewAvailability.RowTemplate.Height = 24;
-            this.dataGridViewAvailability.Size = new System.Drawing.Size(1115, 294);
-            this.dataGridViewAvailability.TabIndex = 13;
-            this.dataGridViewAvailability.Visible = false;
-            // 
-            // buttonSearch
-            // 
-            this.buttonSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonSearch.Location = new System.Drawing.Point(141, 355);
-            this.buttonSearch.Name = "buttonSearch";
-            this.buttonSearch.Size = new System.Drawing.Size(116, 44);
-            this.buttonSearch.TabIndex = 12;
-            this.buttonSearch.Text = "Search";
-            this.buttonSearch.UseVisualStyleBackColor = true;
-            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
-            // 
-            // dateTimePickerEnd
-            // 
-            this.dateTimePickerEnd.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePickerEnd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePickerEnd.Location = new System.Drawing.Point(474, 259);
-            this.dateTimePickerEnd.Name = "dateTimePickerEnd";
-            this.dateTimePickerEnd.Size = new System.Drawing.Size(229, 34);
-            this.dateTimePickerEnd.TabIndex = 9;
-            // 
-            // dateTimePickerStart
-            // 
-            this.dateTimePickerStart.CalendarFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePickerStart.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.dateTimePickerStart.Location = new System.Drawing.Point(141, 259);
-            this.dateTimePickerStart.Name = "dateTimePickerStart";
-            this.dateTimePickerStart.Size = new System.Drawing.Size(229, 34);
-            this.dateTimePickerStart.TabIndex = 8;
+            this.tabPageGuests.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
+            this.tabPageGuests.Controls.Add(this.dataGridViewGuests);
+            this.tabPageGuests.Controls.Add(this.labelcheck);
+            this.tabPageGuests.Location = new System.Drawing.Point(4, 37);
+            this.tabPageGuests.Name = "tabPageGuests";
+            this.tabPageGuests.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageGuests.Size = new System.Drawing.Size(1443, 952);
+            this.tabPageGuests.TabIndex = 2;
+            this.tabPageGuests.Text = "Guests";
             // 
             // labelcheck
             // 
             this.labelcheck.AutoSize = true;
-            this.labelcheck.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelcheck.Location = new System.Drawing.Point(136, 87);
+            this.labelcheck.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelcheck.Location = new System.Drawing.Point(83, 77);
             this.labelcheck.Name = "labelcheck";
-            this.labelcheck.Size = new System.Drawing.Size(236, 37);
+            this.labelcheck.Size = new System.Drawing.Size(119, 41);
             this.labelcheck.TabIndex = 6;
-            this.labelcheck.Text = "Check availability:";
+            this.labelcheck.Text = "Guests:";
             // 
-            // labelEnd
+            // dataGridViewGuests
             // 
-            this.labelEnd.AutoSize = true;
-            this.labelEnd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelEnd.Location = new System.Drawing.Point(469, 178);
-            this.labelEnd.Name = "labelEnd";
-            this.labelEnd.Size = new System.Drawing.Size(97, 28);
-            this.labelEnd.TabIndex = 5;
-            this.labelEnd.Text = "End date:";
-            // 
-            // labelStart
-            // 
-            this.labelStart.AutoSize = true;
-            this.labelStart.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelStart.Location = new System.Drawing.Point(136, 178);
-            this.labelStart.Name = "labelStart";
-            this.labelStart.Size = new System.Drawing.Size(105, 28);
-            this.labelStart.TabIndex = 4;
-            this.labelStart.Text = "Start date:";
+            this.dataGridViewGuests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewGuests.Location = new System.Drawing.Point(90, 171);
+            this.dataGridViewGuests.Name = "dataGridViewGuests";
+            this.dataGridViewGuests.RowHeadersWidth = 51;
+            this.dataGridViewGuests.RowTemplate.Height = 24;
+            this.dataGridViewGuests.Size = new System.Drawing.Size(1115, 294);
+            this.dataGridViewGuests.TabIndex = 7;
             // 
             // ReservationControl
             // 
@@ -338,9 +278,9 @@
             this.tabPageReservations.ResumeLayout(false);
             this.tabPageReservations.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAllReservations)).EndInit();
-            this.tabPageCheckAvailability.ResumeLayout(false);
-            this.tabPageCheckAvailability.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAvailability)).EndInit();
+            this.tabPageGuests.ResumeLayout(false);
+            this.tabPageGuests.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewGuests)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -363,13 +303,8 @@
         private System.Windows.Forms.Label labelReservations;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.ComboBox comboBoxRoomNumber;
-        private System.Windows.Forms.TabPage tabPageCheckAvailability;
+        private System.Windows.Forms.TabPage tabPageGuests;
         private System.Windows.Forms.Label labelcheck;
-        private System.Windows.Forms.Label labelEnd;
-        private System.Windows.Forms.Label labelStart;
-        private System.Windows.Forms.Button buttonSearch;
-        private System.Windows.Forms.DateTimePicker dateTimePickerEnd;
-        private System.Windows.Forms.DateTimePicker dateTimePickerStart;
-        private System.Windows.Forms.DataGridView dataGridViewAvailability;
+        private System.Windows.Forms.DataGridView dataGridViewGuests;
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace HotelMarijaMagdalena
+﻿using System.Windows.Forms;
+
+namespace HotelMarijaMagdalena
 {
     partial class PreviewForm
     {
@@ -46,6 +48,8 @@
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1007, 1002);
             this.Controls.Add(this.previewControl);
+            this.StartPosition = FormStartPosition.Manual;
+            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "PreviewForm";
             this.Text = "Bill";
             this.ResumeLayout(false);

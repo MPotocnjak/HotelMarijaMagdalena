@@ -28,71 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelPrintInvoice = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.comboBoxRoomNumber = new System.Windows.Forms.ComboBox();
-            this.buttonSave = new System.Windows.Forms.Button();
-            this.labelRoomNumber = new System.Windows.Forms.Label();
-            this.labelPrice = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.numericUpDownPrice = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.listBoxService = new System.Windows.Forms.ListBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelPrintInvoice
+            // label4
             // 
-            this.labelPrintInvoice.AutoSize = true;
-            this.labelPrintInvoice.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelPrintInvoice.Location = new System.Drawing.Point(154, 101);
-            this.labelPrintInvoice.Name = "labelPrintInvoice";
-            this.labelPrintInvoice.Size = new System.Drawing.Size(243, 37);
-            this.labelPrintInvoice.TabIndex = 23;
-            this.labelPrintInvoice.Text = "Additional service:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(85, 161);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(149, 28);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "Room number:";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.Location = new System.Drawing.Point(90, 650);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 44);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBoxRoomNumber
             // 
             this.comboBoxRoomNumber.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboBoxRoomNumber.FormattingEnabled = true;
-            this.comboBoxRoomNumber.Location = new System.Drawing.Point(161, 255);
+            this.comboBoxRoomNumber.Location = new System.Drawing.Point(90, 209);
             this.comboBoxRoomNumber.Name = "comboBoxRoomNumber";
             this.comboBoxRoomNumber.Size = new System.Drawing.Size(425, 36);
-            this.comboBoxRoomNumber.TabIndex = 22;
+            this.comboBoxRoomNumber.TabIndex = 36;
             // 
-            // buttonSave
+            // label3
             // 
-            this.buttonSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonSave.Location = new System.Drawing.Point(161, 696);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(116, 44);
-            this.buttonSave.TabIndex = 21;
-            this.buttonSave.Text = "Save";
-            this.buttonSave.UseVisualStyleBackColor = true;
-            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(83, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(281, 41);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Additional service:";
             // 
-            // labelRoomNumber
+            // label2
             // 
-            this.labelRoomNumber.AutoSize = true;
-            this.labelRoomNumber.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelRoomNumber.Location = new System.Drawing.Point(156, 198);
-            this.labelRoomNumber.Name = "labelRoomNumber";
-            this.labelRoomNumber.Size = new System.Drawing.Size(149, 28);
-            this.labelRoomNumber.TabIndex = 20;
-            this.labelRoomNumber.Text = "Room number:";
-            // 
-            // labelPrice
-            // 
-            this.labelPrice.AutoSize = true;
-            this.labelPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelPrice.Location = new System.Drawing.Point(156, 571);
-            this.labelPrice.Name = "labelPrice";
-            this.labelPrice.Size = new System.Drawing.Size(61, 28);
-            this.labelPrice.TabIndex = 25;
-            this.labelPrice.Text = "Price:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(85, 525);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 28);
+            this.label2.TabIndex = 38;
+            this.label2.Text = "Price:";
             // 
             // numericUpDownPrice
             // 
             this.numericUpDownPrice.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDownPrice.Location = new System.Drawing.Point(161, 616);
+            this.numericUpDownPrice.Location = new System.Drawing.Point(90, 570);
             this.numericUpDownPrice.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -100,17 +102,17 @@
             0});
             this.numericUpDownPrice.Name = "numericUpDownPrice";
             this.numericUpDownPrice.Size = new System.Drawing.Size(425, 30);
-            this.numericUpDownPrice.TabIndex = 26;
+            this.numericUpDownPrice.TabIndex = 39;
             // 
-            // label6
+            // label1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(592, 620);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(18, 20);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "€";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(521, 574);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 20);
+            this.label1.TabIndex = 40;
+            this.label1.Text = "€";
             // 
             // listBoxService
             // 
@@ -126,28 +128,51 @@
             "Coctail bar",
             "Room service",
             "Wellness"});
-            this.listBoxService.Location = new System.Drawing.Point(161, 337);
+            this.listBoxService.Location = new System.Drawing.Point(90, 291);
             this.listBoxService.Name = "listBoxService";
             this.listBoxService.Size = new System.Drawing.Size(425, 217);
-            this.listBoxService.TabIndex = 33;
+            this.listBoxService.TabIndex = 41;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(614, 173);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(722, 354);
+            this.dataGridView1.TabIndex = 43;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.Location = new System.Drawing.Point(607, 77);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(183, 41);
+            this.label5.TabIndex = 42;
+            this.label5.Text = "All services:";
             // 
             // ServiceControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.listBoxService);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.numericUpDownPrice);
-            this.Controls.Add(this.labelPrice);
-            this.Controls.Add(this.labelPrintInvoice);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBoxRoomNumber);
-            this.Controls.Add(this.buttonSave);
-            this.Controls.Add(this.labelRoomNumber);
             this.Name = "ServiceControl";
             this.Size = new System.Drawing.Size(1443, 952);
             this.Load += new System.EventHandler(this.ServiceControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPrice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,13 +180,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Label labelPrintInvoice;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBoxRoomNumber;
-        private System.Windows.Forms.Button buttonSave;
-        private System.Windows.Forms.Label labelRoomNumber;
-        private System.Windows.Forms.Label labelPrice;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown numericUpDownPrice;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBoxService;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label5;
     }
 }
