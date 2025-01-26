@@ -45,7 +45,6 @@
             this.TotalPrice = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.richTextBoxTypes = new System.Windows.Forms.RichTextBox();
             this.richTextBoxPrices = new System.Windows.Forms.RichTextBox();
@@ -225,16 +224,6 @@
             this.label8.TabIndex = 64;
             this.label8.Text = "Price:";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(402, 344);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 29);
-            this.label7.TabIndex = 63;
-            this.label7.Text = "Quantity:";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -319,7 +308,6 @@
             this.Controls.Add(this.TotalPrice);
             this.Controls.Add(this.label37);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.labelRoomNumber);
             this.Controls.Add(this.label16);
@@ -361,7 +349,6 @@
         private System.Windows.Forms.Label TotalPrice;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RichTextBox richTextBoxTypes;
         private System.Windows.Forms.RichTextBox richTextBoxPrices;

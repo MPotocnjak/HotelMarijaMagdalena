@@ -30,7 +30,6 @@
         {
             this.tabControlCheckIn = new System.Windows.Forms.TabControl();
             this.tabPageCheckIn = new System.Windows.Forms.TabPage();
-            this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.numericUpDownGuests = new System.Windows.Forms.NumericUpDown();
             this.comboBoxRoomNumber = new System.Windows.Forms.ComboBox();
@@ -68,7 +67,6 @@
             // tabPageCheckIn
             // 
             this.tabPageCheckIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
-            this.tabPageCheckIn.Controls.Add(this.buttonUpdate);
             this.tabPageCheckIn.Controls.Add(this.buttonSave);
             this.tabPageCheckIn.Controls.Add(this.numericUpDownGuests);
             this.tabPageCheckIn.Controls.Add(this.comboBoxRoomNumber);
@@ -85,16 +83,6 @@
             this.tabPageCheckIn.Size = new System.Drawing.Size(1443, 952);
             this.tabPageCheckIn.TabIndex = 0;
             this.tabPageCheckIn.Text = "Check-in";
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonUpdate.Location = new System.Drawing.Point(235, 502);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(116, 44);
-            this.buttonUpdate.TabIndex = 12;
-            this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
             // 
             // buttonSave
             // 
@@ -241,13 +229,13 @@
             this.labelStatus.TabIndex = 1;
             this.labelStatus.Text = "Status:";
             // 
-            // BookingControl
+            // CheckInControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Controls.Add(this.tabControlCheckIn);
-            this.Name = "BookingControl";
+            this.Name = "CheckInControl";
             this.Size = new System.Drawing.Size(1451, 993);
             this.tabControlCheckIn.ResumeLayout(false);
             this.tabPageCheckIn.ResumeLayout(false);
@@ -275,7 +263,6 @@
         private System.Windows.Forms.ComboBox comboBoxRoomNumber;
         private System.Windows.Forms.DateTimePicker dateTimePickerCheckOut;
         private System.Windows.Forms.DateTimePicker dateTimePickerCheckIn;
-        private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.DataGridView dataGridViewCheckIn;
     }
