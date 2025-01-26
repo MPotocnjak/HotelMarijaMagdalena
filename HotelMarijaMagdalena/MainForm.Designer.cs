@@ -32,7 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelSlide = new System.Windows.Forms.Panel();
             this.ServicesButton = new System.Windows.Forms.Button();
-            this.BillButton = new System.Windows.Forms.Button();
+            this.InvoiceButton = new System.Windows.Forms.Button();
             this.EmployeeButton = new System.Windows.Forms.Button();
             this.ReservationsButton = new System.Windows.Forms.Button();
             this.CheckInButton = new System.Windows.Forms.Button();
@@ -45,8 +45,8 @@
             this.labelHotelName = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.roomControl = new HotelMarijaMagdalena.RoomControl();
-            this.serviceControl = new HotelMarijaMagdalena.ServiceControl();
-            this.billControl = new HotelMarijaMagdalena.BillControl();
+            this.servicesControl = new HotelMarijaMagdalena.ServicesControl();
+            this.invoiceControl = new HotelMarijaMagdalena.InvoiceControl();
             this.employeeControl = new HotelMarijaMagdalena.EmployeeControl();
             this.reservationControl = new HotelMarijaMagdalena.ReservationControl();
             this.checkInControl = new HotelMarijaMagdalena.CheckInControl();
@@ -63,7 +63,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.panelSlide);
             this.panel1.Controls.Add(this.ServicesButton);
-            this.panel1.Controls.Add(this.BillButton);
+            this.panel1.Controls.Add(this.InvoiceButton);
             this.panel1.Controls.Add(this.EmployeeButton);
             this.panel1.Controls.Add(this.ReservationsButton);
             this.panel1.Controls.Add(this.CheckInButton);
@@ -98,20 +98,20 @@
             this.ServicesButton.UseVisualStyleBackColor = false;
             this.ServicesButton.Click += new System.EventHandler(this.ServicesButton_Click);
             // 
-            // BillButton
+            // InvoiceButton
             // 
-            this.BillButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BillButton.FlatAppearance.BorderSize = 0;
-            this.BillButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BillButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.BillButton.ForeColor = System.Drawing.Color.White;
-            this.BillButton.Location = new System.Drawing.Point(0, 391);
-            this.BillButton.Name = "BillButton";
-            this.BillButton.Size = new System.Drawing.Size(169, 55);
-            this.BillButton.TabIndex = 5;
-            this.BillButton.Text = "Bill";
-            this.BillButton.UseVisualStyleBackColor = false;
-            this.BillButton.Click += new System.EventHandler(this.BillButton_Click);
+            this.InvoiceButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.InvoiceButton.FlatAppearance.BorderSize = 0;
+            this.InvoiceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.InvoiceButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.InvoiceButton.ForeColor = System.Drawing.Color.White;
+            this.InvoiceButton.Location = new System.Drawing.Point(0, 391);
+            this.InvoiceButton.Name = "InvoiceButton";
+            this.InvoiceButton.Size = new System.Drawing.Size(169, 55);
+            this.InvoiceButton.TabIndex = 5;
+            this.InvoiceButton.Text = "Bill";
+            this.InvoiceButton.UseVisualStyleBackColor = false;
+            this.InvoiceButton.Click += new System.EventHandler(this.InvoiceButton_Click);
             // 
             // EmployeeButton
             // 
@@ -248,8 +248,8 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel3.Controls.Add(this.roomControl);
-            this.panel3.Controls.Add(this.serviceControl);
-            this.panel3.Controls.Add(this.billControl);
+            this.panel3.Controls.Add(this.servicesControl);
+            this.panel3.Controls.Add(this.invoiceControl);
             this.panel3.Controls.Add(this.employeeControl);
             this.panel3.Controls.Add(this.reservationControl);
             this.panel3.Controls.Add(this.checkInControl);
@@ -270,25 +270,25 @@
             this.roomControl.TabIndex = 5;
             this.roomControl.Visible = false;
             // 
-            // serviceControl
+            // servicesControl
             // 
-            this.serviceControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
-            this.serviceControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.serviceControl.Location = new System.Drawing.Point(0, 0);
-            this.serviceControl.Name = "serviceControl";
-            this.serviceControl.Size = new System.Drawing.Size(1060, 371);
-            this.serviceControl.TabIndex = 5;
-            this.serviceControl.Visible = false;
+            this.servicesControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.servicesControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.servicesControl.Location = new System.Drawing.Point(0, 0);
+            this.servicesControl.Name = "servicesControl";
+            this.servicesControl.Size = new System.Drawing.Size(1060, 371);
+            this.servicesControl.TabIndex = 5;
+            this.servicesControl.Visible = false;
             // 
-            // billControl
+            // paymentControl
             // 
-            this.billControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
-            this.billControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.billControl.Location = new System.Drawing.Point(0, 0);
-            this.billControl.Name = "billControl";
-            this.billControl.Size = new System.Drawing.Size(1060, 371);
-            this.billControl.TabIndex = 5;
-            this.billControl.Visible = false;
+            this.invoiceControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.invoiceControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.invoiceControl.Location = new System.Drawing.Point(0, 0);
+            this.invoiceControl.Name = "paymentControl";
+            this.invoiceControl.Size = new System.Drawing.Size(1060, 371);
+            this.invoiceControl.TabIndex = 5;
+            this.invoiceControl.Visible = false;
             // 
             // employeeControl
             // 
@@ -364,7 +364,7 @@
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.Label labelUser;
         private System.Windows.Forms.Panel panelSlide;
-        private System.Windows.Forms.Button BillButton;
+        private System.Windows.Forms.Button InvoiceButton;
         private System.Windows.Forms.Button EmployeeButton;
         private System.Windows.Forms.Button ReservationsButton;
         private System.Windows.Forms.Button CheckInButton;
@@ -374,8 +374,8 @@
         private System.Windows.Forms.Button ServicesButton;
         private ReservationControl reservationControl;
         private CheckInControl checkInControl;
-        private ServiceControl serviceControl;
-        private BillControl billControl;
+        private ServicesControl servicesControl;
+        private InvoiceControl invoiceControl;
         private EmployeeControl employeeControl;
         private RoomControl roomControl;
     }

@@ -31,7 +31,7 @@ namespace HotelMarijaMagdalena
                 SqlConnection conn = new SqlConnection(connectionString);
                 conn.Open();
 
-                string query = @"SELECT * FROM Employees";
+                string query = @"SELECT FirstName, LastName, Position, Shift, Status, Phone FROM Employees";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -49,7 +49,7 @@ namespace HotelMarijaMagdalena
                 SqlConnection conn = new SqlConnection(connectionString);
                 conn.Open();
 
-                string query = @"SELECT * FROM Employees";
+                string query = @"SELECT FirstName, LastName, Position, Shift, Status, Phone FROM Employees";
                 SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);

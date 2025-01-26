@@ -35,8 +35,8 @@ namespace HotelMarijaMagdalena
             checkInControl.Hide();
             reservationControl.Hide();
             employeeControl.Hide();
-            billControl.Hide();
-            serviceControl.Hide();
+            invoiceControl.Hide();
+            servicesControl.Hide();
         }
 
         private void RoomsButton_Click(object sender, EventArgs e)
@@ -47,8 +47,8 @@ namespace HotelMarijaMagdalena
             checkInControl.Hide();
             reservationControl.Hide();
             employeeControl.Hide();
-            billControl.Hide();
-            serviceControl.Hide();
+            invoiceControl.Hide();
+            servicesControl.Hide();
         }
 
         private void CheckInButton_Click(object sender, EventArgs e)
@@ -59,8 +59,8 @@ namespace HotelMarijaMagdalena
             checkInControl.Show();
             reservationControl.Hide();
             employeeControl.Hide();
-            billControl.Hide();
-            serviceControl.Hide();
+            invoiceControl.Hide();
+            servicesControl.Hide();
         }
 
         private void ReservationsButton_Click(object sender, EventArgs e)
@@ -71,8 +71,8 @@ namespace HotelMarijaMagdalena
             checkInControl.Hide();
             reservationControl.Show();
             employeeControl.Hide();
-            billControl.Hide();
-            serviceControl.Hide();
+            invoiceControl.Hide();
+            servicesControl.Hide();
         }
 
         private void EmployeeButton_Click(object sender, EventArgs e)
@@ -83,20 +83,20 @@ namespace HotelMarijaMagdalena
             checkInControl.Hide();
             reservationControl.Hide();
             employeeControl.Show();
-            billControl.Hide();
-            serviceControl.Hide();
+            invoiceControl.Hide();
+            servicesControl.Hide();
         }
 
-        private void BillButton_Click(object sender, EventArgs e)
+        private void InvoiceButton_Click(object sender, EventArgs e)
         {
-            MovePanel(BillButton);
+            MovePanel(InvoiceButton);
             pictureBoxHotel.Visible = false;
             roomControl.Hide();
             checkInControl.Hide();
             reservationControl.Hide();
             employeeControl.Hide();
-            billControl.Show();
-            serviceControl.Hide();
+            invoiceControl.Show();
+            servicesControl.Hide();
         }
 
         private void ServicesButton_Click(object sender, EventArgs e)
@@ -107,8 +107,8 @@ namespace HotelMarijaMagdalena
             checkInControl.Hide();
             reservationControl.Hide();
             employeeControl.Hide();
-            billControl.Hide();
-            serviceControl.Show();
+            invoiceControl.Hide();
+            servicesControl.Show();
         }
 
         /* Showing username after loading form. */

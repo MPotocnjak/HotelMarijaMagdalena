@@ -45,8 +45,8 @@
             this.dataGridViewAllReservations = new System.Windows.Forms.DataGridView();
             this.labelReservations = new System.Windows.Forms.Label();
             this.tabPageGuests = new System.Windows.Forms.TabPage();
-            this.labelcheck = new System.Windows.Forms.Label();
             this.dataGridViewGuests = new System.Windows.Forms.DataGridView();
+            this.labelcheck = new System.Windows.Forms.Label();
             this.tabControlReservation.SuspendLayout();
             this.tabPageAddReservation.SuspendLayout();
             this.tabPageReservations.SuspendLayout();
@@ -244,6 +244,17 @@
             this.tabPageGuests.TabIndex = 2;
             this.tabPageGuests.Text = "Guests";
             // 
+            // dataGridViewGuests
+            // 
+            this.dataGridViewGuests.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewGuests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewGuests.Location = new System.Drawing.Point(90, 171);
+            this.dataGridViewGuests.Name = "dataGridViewGuests";
+            this.dataGridViewGuests.RowHeadersWidth = 51;
+            this.dataGridViewGuests.RowTemplate.Height = 24;
+            this.dataGridViewGuests.Size = new System.Drawing.Size(1115, 294);
+            this.dataGridViewGuests.TabIndex = 7;
+            // 
             // labelcheck
             // 
             this.labelcheck.AutoSize = true;
@@ -253,16 +264,6 @@
             this.labelcheck.Size = new System.Drawing.Size(119, 41);
             this.labelcheck.TabIndex = 6;
             this.labelcheck.Text = "Guests:";
-            // 
-            // dataGridViewGuests
-            // 
-            this.dataGridViewGuests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewGuests.Location = new System.Drawing.Point(90, 171);
-            this.dataGridViewGuests.Name = "dataGridViewGuests";
-            this.dataGridViewGuests.RowHeadersWidth = 51;
-            this.dataGridViewGuests.RowTemplate.Height = 24;
-            this.dataGridViewGuests.Size = new System.Drawing.Size(1115, 294);
-            this.dataGridViewGuests.TabIndex = 7;
             // 
             // ReservationControl
             // 

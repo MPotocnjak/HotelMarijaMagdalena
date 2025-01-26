@@ -47,7 +47,6 @@ namespace HotelMarijaMagdalena
 
         private void tabControlReservation_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             var tabIndex = tabControlReservation.SelectedIndex;
 
             // Selected tab 'Reservations'
@@ -63,6 +62,20 @@ namespace HotelMarijaMagdalena
                 adapter.Fill(dt);
 
                 dataGridViewAllReservations.DataSource = dt;
+                conn.Close();
+            }
+            else if (tabIndex == 2)
+            {
+                // Show Guests table from database
+                SqlConnection conn = new SqlConnection(connectionString);
+                conn.Open();
+
+                string query = @"SELECT * FROM Guests";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                dataGridViewGuests.DataSource = dt;
                 conn.Close();
             }
         }
